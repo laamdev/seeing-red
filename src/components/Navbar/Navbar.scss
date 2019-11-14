@@ -1,0 +1,65 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: grey;
+  height: 56px;
+}
+
+.navbar__navigation {
+  display: flex;
+  height: 100%;
+  align-items: center; /*Vertical align*/
+  padding: 0 1rem;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    padding: 0 0.5rem;
+  }
+}
+
+.navbar__logo {
+  margin-left: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.spacer {
+  flex: 1; /* Takes all the available space between the space that is occupied by the two logo and the navigation items*/
+}
+
+.navbar__navigation-items a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: yellow;
+  }
+
+  &:active {
+    color: red;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar__toggle-button {
+    display: none;
+  }
+}
