@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: grey;
-  height: 56px;
+  background: #eee2e2;
+  height: 4rem;
 }
 
 .navbar__navigation {
@@ -22,6 +22,10 @@
 
   li {
     padding: 0 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

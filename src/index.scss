@@ -14,3 +14,24 @@ body {
 body {
   font-family: sans-serif;
 }
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+/*colors
+#eee2e2	(238,226,226)
+
+#e3c09d	(227,192,157)
+ 
+#e39776	(227,151,118)
+
+#dd6345	(221,99,69)
+
+#b83b1c	(184,59,28)
+*/

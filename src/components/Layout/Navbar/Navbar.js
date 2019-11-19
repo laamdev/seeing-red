@@ -1,6 +1,6 @@
 import React from "react";
 
-import DrawerToggle from "../Drawer/DrawerToggle";
+import DrawerToggle from "../../Drawer/DrawerToggle";
 
 import "./Navbar.scss";
 
@@ -9,7 +9,7 @@ const navbar = ({ toggleHandler }) => {
     <header className="navbar">
       <nav className="navbar__navigation">
         <div className="navbar__logo">
-          <a href="/">The Logo</a>
+          <a href="/">seeingRED</a>
         </div>
 
         <div className="spacer"></div>
