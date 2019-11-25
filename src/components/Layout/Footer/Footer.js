@@ -8,15 +8,7 @@ const footer = () => {
       <div className="footer__items">
         <ul>
           <li>
-            <a href="/">About</a>
-          </li>
-
-          <li>
-            <a href="/">Destinations</a>
-          </li>
-
-          <li>
-            <a href="/">Contact</a>
+            <small>©2019 Seeing Red</small>
           </li>
         </ul>
       </div>

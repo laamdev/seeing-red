@@ -1,9 +1,9 @@
 .navbar {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
-  background: #eee2e2;
+  background-color: black;
   height: 4rem;
 }
 
@@ -31,12 +31,18 @@
 
 .navbar__logo {
   margin-left: 1rem;
+  letter-spacing: 3px;
 
   a {
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: "Permanent Marker", cursive;
   }
+}
+
+.navbar__logo-icon {
+  width: 1.5rem;
 }
 
 .spacer {
@@ -44,7 +50,7 @@
 }
 
 .navbar__navigation-items a {
-  color: white;
+  color: #f2f2f2;
   text-decoration: none;
 
   &:hover {
