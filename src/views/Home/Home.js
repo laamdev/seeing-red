@@ -4,11 +4,11 @@ import "./Home.scss";
 const Home = () => {
   return (
     <>
-      <div className="hero">
-        <section className="hero__image">
-          <h1>We are the Martians</h1>
-        </section>
-      </div>
+      <section className="hero">
+        <div className="hero__image">
+          <h1 className="hero__title">We are the Martians</h1>
+        </div>
+      </section>
 
       <div className="services">
         <section className="service">
@@ -20,7 +20,7 @@ const Home = () => {
           />
 
           <div className="service__content" data-aos="fade-left">
-            <h2 className="service__content__title">
+            <h2 className="service__title">
               Fly with our state-of-the-art rocket fleet
             </h2>
             <p>
@@ -31,7 +31,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="service">
+        <section className="service middle">
           <div className="service__content" data-aos="fade-right">
             <h2 className="service__title">
               Explore the Red Planet any way you want
@@ -56,7 +56,7 @@ const Home = () => {
           <img
             className="service__image"
             data-aos="fade-right"
-            src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/rocket-3.svg?alt=media&token=54b2bc9d-15ed-4719-9614-2fbeaab7a65f"
+            src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/rocket-3.svg?alt=media&token=7891e5eb-90c3-4d3b-8cdd-c1932a9105a8"
             alt="rocket launching"
           />
 

@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Layout/Navbar/Navbar";
+import Footer from "./components/Layout/Footer/Footer";
+
 import Drawer from "./components/Drawer/Drawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Layout/Footer/Footer";
+import Home from "./views/Home/Home";
+import About from "./views/About/About";
+import Contact from "./views/Contact/Contact";
 
 function App() {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);

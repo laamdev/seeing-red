@@ -1,19 +1,27 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: "Varela", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
+:root {
+  --titles-font: "Permanent Marker", cursive;
+  --text-font: "Varela", sans-serif;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: var(--text-font);
+  line-height: 1.5;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
 }
 
 .page-container {
@@ -26,6 +34,10 @@ a {
   font-size: 1.2rem;
 }
 
+button {
+  font-weight: 600;
+  font-family: "Varela", sans-serif;
+}
 
 // /*colors
 
@@ -34,16 +46,14 @@ a {
 // #eee2e2	(238,226,226)
 
 // #e3c09d	(227,192,157)
- 
+
 // #e39776	(227,151,118)
 
 // #dd6345	(221,99,69)
 
 // #b83b1c	(184,59,28)
 
-
-// */
-
+// #0D0D0D
 
 // /* FONTS
 
@@ -58,7 +68,5 @@ a {
 // Varela
 // <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
 // font-family: 'Varela', sans-serif;
-
-
 
 // /*

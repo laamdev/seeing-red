@@ -1,8 +1,4 @@
 .hero {
-  /* Sizing */
-  width: 100vw;
-  height: 100vh;
-
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
@@ -13,20 +9,20 @@
   color: #f2f2f2;
 
   /* Background styles */
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd);
+  background: url(https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  h1 {
+  &__title {
     /* Text styles */
     font-size: 4rem;
     font-family: "Permanent Marker", cursive;
+    line-height: 1;
+    padding: 0 10px;
     /* Margins */
     margin: 0;
-    line-height: 1em;
-    padding: 0 20px;
   }
 }
 
@@ -35,52 +31,51 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
   background-color: #f2f2f2;
 
-  h2 {
+  &__title {
     font-size: 2.3rem;
     font-family: "Permanent Marker", cursive;
     letter-spacing: 0.3rem;
     color: #b83b1c;
   }
-}
 
-.service__image {
-  width: 33vw;
-}
+  &__image {
+    width: 33%;
+  }
 
-.service__content {
-  width: 33vw;
-  line-height: 1.75em;
-  text-align: center;
-}
+  &__content {
+    width: 33vw;
+    line-height: 1.75em;
+    text-align: center;
+  }
 
-.service__btn {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 4px;
-  padding: 0 16px;
-  min-width: 64px;
-  height: 36px;
-  vertical-align: middle;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  background-color: #af381b;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  font-family: "Varela", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 36px;
-  overflow: hidden;
-  outline: none;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
+  &__btn {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: #af381b;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-family: "Varela", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
 }
 
 .service__btn::-moz-focus-inner {
@@ -163,17 +158,44 @@
   opacity: 0;
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE STYLES */
+
+// small devices up to 768px
+@media screen and (max-width: 768px) {
   .hero {
-    h1 {
-      font-size: 4.5rem;
+    &__title {
+      font-size: 4em;
     }
+  }
+
+  .service {
+    flex-direction: column;
+    height: 90%;
+    padding: 40px 0;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__content {
+      width: 80%;
+      font-size: 1rem;
+    }
+
+    &__image {
+      width: 50%;
+    }
+  }
+
+  .middle {
+    flex-direction: column-reverse;
   }
 }
 
-@media (min-width: 769px) {
+// devices from 769px and larger
+@media screen and (min-width: 769px) {
   .hero {
-    h1 {
+    &__title {
       font-size: 10rem;
     }
   }
