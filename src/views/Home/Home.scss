@@ -3,29 +3,66 @@
 .hero {
   /* Flexbox stuff */
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  // justify-content: center;
   align-items: center;
 
   /* Text styles */
-  text-align: center;
   color: #f2f2f2;
 
   /* Background styles */
-  background: url(https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-color: #262626;
+  // background-image: url("https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd");
+  // background-size: cover;
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
 
-  &__title {
-    /* Text styles */
-    font-size: 4rem;
-    font-family: "Permanent Marker", cursive;
-    line-height: 1;
-    padding: 0 10px;
-    /* Margins */
-    margin: 0;
+  &__video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    video {
+      min-width: 100%;
+      min-height: 100%;
+    }
   }
+
+  &__overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #82898d;
+    z-index: 1;
+    opacity: 0.75;
+  }
+
+  &__content {
+    z-index: 2;
+
+    h1 {
+      /* Text styles */
+      font-size: 4rem;
+      font-family: "Permanent Marker", cursive;
+      line-height: 1;
+      padding: 0 10px;
+      /* Margins */
+      margin: 0;
+    }
+  }
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 1rem;
+  margin: auto;
+  text-align: center;
 }
 
 .service {

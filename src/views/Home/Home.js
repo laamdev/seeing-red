@@ -4,11 +4,20 @@ import "./Home.scss";
 const Home = () => {
   return (
     <>
-      <section className="hero">
-        <div className="hero__image">
-          <h1 className="hero__title">We are the Martians</h1>
+      <header className="hero container">
+        <div className="hero__video-wrap">
+          <video src="hero-video.mp4" autoPlay loop muted />
         </div>
-      </section>
+
+        <div className="hero__overlay"></div>
+        <div className="hero__content">
+          <h1 className="hero__title">We are the Martians</h1>
+          <p>Fuck the police</p>
+          <a href="#" className="btn">
+            Join us
+          </a>
+        </div>
+      </header>
 
       <div className="services">
         <section className="service">
