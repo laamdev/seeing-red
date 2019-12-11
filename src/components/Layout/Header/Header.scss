@@ -1,0 +1,90 @@
+.header {
+  --text-color: #f2f2f2;
+  --text-color-inverse: #0d0d0d;
+  --background: transparent;
+  --background-inverse: #f2f2f2;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  transition: 0.5s;
+  background-color: black;
+  z-index: 500;
+
+  &__nav {
+    display: flex;
+    height: 100%;
+    align-items: center; /*Vertical align*/
+    padding: 0 1rem;
+  }
+
+  &__logo {
+    margin-left: 1rem;
+
+    &__letters {
+      text-decoration: none;
+      color: var(--text-color);
+      font-family: var(--titles-font);
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+    }
+
+    &__icon {
+      width: 1.5rem;
+    }
+  }
+
+  &__links {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      padding: 0 0.5rem;
+    }
+
+    &__link {
+      font-size: var(--button-link-font-size);
+      color: var(--text-color);
+      padding: 0 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.5s;
+
+      &.active,
+      &:hover {
+        color: var(--text-color-inverse);
+        background: var(--background-inverse);
+      }
+    }
+  }
+
+  .spacer {
+    flex: 1; /* Takes all the available space between the space that is occupied by the two logo and the navigation items*/
+  }
+}
+
+.header.shadow {
+  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+  transform: translateY(-110%);
+}
+
+@media (max-width: 768px) {
+  .header__links {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__toggle-button {
+    display: none;
+  }
+}

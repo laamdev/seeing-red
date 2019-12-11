@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navbar from "./components/Layout/Navbar/Navbar";
+import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
 
 import Drawer from "./components/Drawer/Drawer";
@@ -32,8 +32,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App page-container" stlye={{ height: "100%" }}>
-        <Navbar toggleHandler={toggleHandler} />
+      <div className="App page-container">
+        <Header toggleHandler={toggleHandler} />
 
         <Drawer drawerIsOpen={drawerIsOpen} />
         {backdrop}
@@ -47,6 +47,8 @@ function App() {
             <Route path="/contact" component={Contact} exact></Route>
           </Switch>
         </main>
+
+        <div className="vertical-spacer"></div>
 
         <Footer />
       </div>

@@ -1,6 +1,7 @@
 :root {
   --titles-font: "Permanent Marker", cursive;
   --text-font: "Varela", sans-serif;
+  --button-link-font-size: 1rem;
 }
 
 *,
@@ -9,7 +10,10 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -17,6 +21,7 @@ body {
   font-size: 1rem;
   font-family: var(--text-font);
   line-height: 1.5;
+  height: 100%;
 }
 
 section {
@@ -26,7 +31,7 @@ section {
 
 .page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 a {
@@ -39,6 +44,11 @@ button {
   font-family: "Varela", sans-serif;
 }
 
+.vertical-spacer {
+  height: 100px;
+  margin: 20px 0 -50px 0;
+  background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
+}
 // /*colors
 
 // #F2F2F2

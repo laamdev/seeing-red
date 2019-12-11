@@ -1,3 +1,5 @@
+//MOBILE FIRST (small devices up to 768px)
+
 .hero {
   /* Flexbox stuff */
   display: flex;
@@ -28,7 +30,11 @@
 
 .service {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  height: 100%;
+  padding: 40px 0;
+
   justify-content: space-evenly;
   align-items: center;
   background-color: #f2f2f2;
@@ -41,11 +47,11 @@
   }
 
   &__image {
-    width: 33%;
+    width: 90%;
   }
 
   &__content {
-    width: 33vw;
+    width: 90%;
     line-height: 1.75em;
     text-align: center;
   }
@@ -158,39 +164,11 @@
   opacity: 0;
 }
 
-/* RESPONSIVE STYLES */
-
-// small devices up to 768px
-@media screen and (max-width: 768px) {
-  .hero {
-    &__title {
-      font-size: 4em;
-    }
-  }
-
-  .service {
-    flex-direction: column;
-    height: 90%;
-    padding: 40px 0;
-
-    &__title {
-      font-size: 1.5rem;
-    }
-
-    &__content {
-      width: 80%;
-      font-size: 1rem;
-    }
-
-    &__image {
-      width: 50%;
-    }
-  }
-
-  .middle {
-    flex-direction: column-reverse;
-  }
+.middle {
+  flex-direction: column-reverse;
 }
+
+/* RESPONSIVE STYLES */
 
 // devices from 769px and larger
 @media screen and (min-width: 769px) {
@@ -198,5 +176,9 @@
     &__title {
       font-size: 10rem;
     }
+  }
+
+  .service {
+    flex-direction: row;
   }
 }
