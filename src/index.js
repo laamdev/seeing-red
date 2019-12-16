@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
 AOS.init({
-  duration: 1500,
+  duration: 1200,
   once: true
 });
 
