@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import heroVideo from "./hero-video.mp4";
+import Weather from "../../components/Weather/Weather";
 
 const Home = () => {
   return (
@@ -83,6 +84,10 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <section>
+        <Weather />
+      </section>
     </>
   );
 };
