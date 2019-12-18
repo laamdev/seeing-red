@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/seeing-red/static/css/main.c5d12e20.chunk.css",
-    "main.js": "/seeing-red/static/js/main.4eb43834.chunk.js",
-    "main.js.map": "/seeing-red/static/js/main.4eb43834.chunk.js.map",
+    "main.js": "/seeing-red/static/js/main.765f3277.chunk.js",
+    "main.js.map": "/seeing-red/static/js/main.765f3277.chunk.js.map",
     "runtime-main.js": "/seeing-red/static/js/runtime-main.38ee00b1.js",
     "runtime-main.js.map": "/seeing-red/static/js/runtime-main.38ee00b1.js.map",
     "static/css/2.06565635.chunk.css": "/seeing-red/static/css/2.06565635.chunk.css",
     "static/js/2.cad7161f.chunk.js": "/seeing-red/static/js/2.cad7161f.chunk.js",
     "static/js/2.cad7161f.chunk.js.map": "/seeing-red/static/js/2.cad7161f.chunk.js.map",
     "index.html": "/seeing-red/index.html",
-    "precache-manifest.f05766de2072bf42e12dabc53b820b8d.js": "/seeing-red/precache-manifest.f05766de2072bf42e12dabc53b820b8d.js",
+    "precache-manifest.ac7abb5d08d46ed759029667a56b4154.js": "/seeing-red/precache-manifest.ac7abb5d08d46ed759029667a56b4154.js",
     "service-worker.js": "/seeing-red/service-worker.js",
     "static/css/2.06565635.chunk.css.map": "/seeing-red/static/css/2.06565635.chunk.css.map",
     "static/css/main.c5d12e20.chunk.css.map": "/seeing-red/static/css/main.c5d12e20.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.06565635.chunk.css",
     "static/js/2.cad7161f.chunk.js",
     "static/css/main.c5d12e20.chunk.css",
-    "static/js/main.4eb43834.chunk.js"
+    "static/js/main.765f3277.chunk.js"
   ]
 }
