@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <HashRouter basename="/">
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App page-container">
         <Header toggleHandler={toggleHandler} />
 
@@ -42,7 +42,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} exact />
 
-            <Route path="/weather" component={Weather} exact />
+            <Route exact path="/weather" component={Weather} exact />
           </Switch>
         </main>
 
@@ -50,7 +50,7 @@ function App() {
 
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
