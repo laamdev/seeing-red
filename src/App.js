@@ -40,7 +40,7 @@ function App() {
 
         <main>
           <Switch>
-            <Route path="/" component={Home} exact />
+            <Route path="/seeing-red" component={Home} exact />
 
             <Route path="/weather" component={Weather} exact />
 
