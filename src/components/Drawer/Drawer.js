@@ -12,7 +12,7 @@ const drawer = ({ drawerIsOpen }) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Weather</a>
+          <a href="/weather">Weather</a>
         </li>
 
         {/* <li>
