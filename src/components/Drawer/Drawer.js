@@ -1,5 +1,6 @@
 import React from "react";
 import "./Drawer.scss";
+import { Link } from "react-router-dom";
 
 const drawer = ({ drawerIsOpen }) => {
   let drawerClasses = "drawer";
@@ -12,7 +13,7 @@ const drawer = ({ drawerIsOpen }) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/weather">Weather</a>
+          <Link to="/weather" />
         </li>
 
         {/* <li>
