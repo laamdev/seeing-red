@@ -53,21 +53,21 @@ function Header({ toggleHandler }) {
           </NavLink>
         </div>
 
-        <div className="spacer"></div>
+        <div className="spacer" />
 
         <div className="header__links">
           <ul>
             <li>
-              <NavLink className="header__links__link" to="/about">
-                About
+              <NavLink className="header__links__link" to="/weather">
+                Weather
               </NavLink>
             </li>
 
-            <li>
+            {/* <li>
               <NavLink className="header__links__link" to="/contact">
                 Contact
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
 

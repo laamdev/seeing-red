@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.scss";
 import heroVideo from "./hero-video.mp4";
-import Weather from "../../components/Weather/Weather";
 
 const Home = () => {
   return (
@@ -17,7 +16,7 @@ const Home = () => {
           </video>
         </div>
 
-        <div className="hero__overlay"></div>
+        <div className="hero__overlay" />
         <div className="hero__content">
           <h1 className="hero__title">We are the Martians</h1>
         </div>
@@ -84,10 +83,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-
-      <section>
-        <Weather />
-      </section>
     </>
   );
 };

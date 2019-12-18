@@ -12,16 +12,16 @@ const drawer = ({ drawerIsOpen }) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">About</a>
+          <a href="/">Weather</a>
         </li>
 
-        <li>
+        {/* <li>
           <a href="/">Destinations</a>
         </li>
 
         <li>
           <a href="/">Contact</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

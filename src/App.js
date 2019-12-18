@@ -8,7 +8,7 @@ import Drawer from "./components/Drawer/Drawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
 import Home from "./views/Home/Home";
-import About from "./views/About/About";
+import Weather from "./views/Weather/Weather";
 import Contact from "./views/Contact/Contact";
 
 function App() {
@@ -40,15 +40,15 @@ function App() {
 
         <main>
           <Switch>
-            <Route path="/" component={Home} exact></Route>
+            <Route path="/" component={Home} exact />
 
-            <Route path="/about" component={About} exact></Route>
+            <Route path="/weather" component={Weather} exact />
 
-            <Route path="/contact" component={Contact} exact></Route>
+            <Route path="/contact" component={Contact} exact />
           </Switch>
         </main>
 
-        <div className="vertical-spacer"></div>
+        {/* <div className="vertical-spacer"></div> */}
 
         <Footer />
       </div>
