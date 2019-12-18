@@ -23,14 +23,14 @@
     margin: 0.5rem 0;
   }
 
-  a {
+  &__link {
     color: grey;
     text-decoration: none;
     font: 1.2rem;
 
     &:hover,
     &:active {
-      color: orange;
+      color: red;
     }
   }
 }
