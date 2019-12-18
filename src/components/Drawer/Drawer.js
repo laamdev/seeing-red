@@ -13,7 +13,7 @@ const drawer = ({ drawerIsOpen }) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link to="/weather">weather</Link> />
+          <Link to="/weather">Weather</Link>
         </li>
 
         {/* <li>
