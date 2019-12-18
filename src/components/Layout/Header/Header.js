@@ -43,7 +43,7 @@ function Header({ toggleHandler }) {
     <header className={`header ${hiddenStyle} ${shadowStyle}`}>
       <nav className="header__nav">
         <div className="header__logo">
-          <Link to="/seeing-red" className="header__logo__letters">
+          <Link to="/" className="header__logo__letters">
             seeing
             <img
               className="header__logo__icon"

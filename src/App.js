@@ -11,7 +11,7 @@ import Home from "./views/Home/Home";
 import Weather from "./views/Weather/Weather";
 import Contact from "./views/Contact/Contact";
 
-function App() {
+const App = ({ children }) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
   const [backdropIsOpen, setBackdropIsOpen] = useState(false);
@@ -31,27 +31,17 @@ function App() {
   }
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div className="App page-container">
-        <Header toggleHandler={toggleHandler} />
+    <div className="App page-container">
+      <Header toggleHandler={toggleHandler} />
 
-        <Drawer drawerIsOpen={drawerIsOpen} />
-        {backdrop}
+      <Drawer drawerIsOpen={drawerIsOpen} />
+      {backdrop}
 
-        <main>
-          <Switch>
-            <Route exact path="/" component={Home} exact />
+      {children}
 
-            <Route exact path="/weather" component={Weather} exact />
-          </Switch>
-        </main>
-
-        {/* <div className="vertical-spacer"></div> */}
-
-        <Footer />
-      </div>
-    </Router>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
