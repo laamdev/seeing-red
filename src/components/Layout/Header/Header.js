@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import useDocumentScrollThrottled from "../../../hooks/useDocumentScrollThrottled";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import DrawerToggle from "../../Drawer/DrawerToggle";
 
@@ -43,14 +43,15 @@ function Header({ toggleHandler }) {
     <header className={`header ${hiddenStyle} ${shadowStyle}`}>
       <nav className="header__nav">
         <div className="header__logo">
-          <NavLink to="/" className="header__logo__letters">
+          <Link to="/" className="header__logo__letters">
             seeing
             <img
               className="header__logo__icon"
               src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/mars-icon.svg?alt=media&token=45304e72-ddf7-44f8-bd68-b3005af53638"
+              alt="Seeing Red logo"
             />
             RED
-          </NavLink>
+          </Link>
         </div>
 
         <div className="spacer" />
@@ -58,9 +59,9 @@ function Header({ toggleHandler }) {
         <div className="header__links">
           <ul>
             <li>
-              <NavLink className="header__links__link" to="/weather">
+              <Link to="/weather" className="header__links__link">
                 Weather
-              </NavLink>
+              </Link>
             </li>
 
             {/* <li>

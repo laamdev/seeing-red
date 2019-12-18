@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App page-container">
         <Header toggleHandler={toggleHandler} />
 
@@ -40,11 +40,9 @@ function App() {
 
         <main>
           <Switch>
-            <Route path="/seeing-red" component={Home} exact />
+            <Route exact path="/" component={Home} exact />
 
             <Route path="/weather" component={Weather} exact />
-
-            <Route path="/contact" component={Contact} exact />
           </Switch>
         </main>
 
@@ -52,7 +50,7 @@ function App() {
 
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
