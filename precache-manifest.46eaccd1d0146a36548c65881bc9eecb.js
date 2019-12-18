@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "424774f69c477f8fb02586a7b56411bb",
+    "revision": "62992d98c0b6deb6e18a3364b594f8b1",
     "url": "/seeing-red/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seeing-red/static/css/2.06565635.chunk.css"
   },
   {
-    "revision": "289c1ca25935ee5c05b7",
-    "url": "/seeing-red/static/css/main.c5d12e20.chunk.css"
+    "revision": "4c6ceef60df3f092f59f",
+    "url": "/seeing-red/static/css/main.a9009575.chunk.css"
   },
   {
     "revision": "0e6170103dfd7759b549",
     "url": "/seeing-red/static/js/2.cad7161f.chunk.js"
   },
   {
-    "revision": "289c1ca25935ee5c05b7",
-    "url": "/seeing-red/static/js/main.765f3277.chunk.js"
+    "revision": "4c6ceef60df3f092f59f",
+    "url": "/seeing-red/static/js/main.1ddd47ed.chunk.js"
   },
   {
     "revision": "4f85e098c46e42e3033d",
