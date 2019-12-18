@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/seeing-red/static/css/main.c5d12e20.chunk.css",
+    "main.js": "/seeing-red/static/js/main.8f41555c.chunk.js",
+    "main.js.map": "/seeing-red/static/js/main.8f41555c.chunk.js.map",
+    "runtime-main.js": "/seeing-red/static/js/runtime-main.38ee00b1.js",
+    "runtime-main.js.map": "/seeing-red/static/js/runtime-main.38ee00b1.js.map",
+    "static/css/2.06565635.chunk.css": "/seeing-red/static/css/2.06565635.chunk.css",
+    "static/js/2.9a908ddb.chunk.js": "/seeing-red/static/js/2.9a908ddb.chunk.js",
+    "static/js/2.9a908ddb.chunk.js.map": "/seeing-red/static/js/2.9a908ddb.chunk.js.map",
+    "index.html": "/seeing-red/index.html",
+    "precache-manifest.afd74569e7af6ac33cb38007babaa6d2.js": "/seeing-red/precache-manifest.afd74569e7af6ac33cb38007babaa6d2.js",
+    "service-worker.js": "/seeing-red/service-worker.js",
+    "static/css/2.06565635.chunk.css.map": "/seeing-red/static/css/2.06565635.chunk.css.map",
+    "static/css/main.c5d12e20.chunk.css.map": "/seeing-red/static/css/main.c5d12e20.chunk.css.map",
+    "static/media/hero-video.mp4": "/seeing-red/static/media/hero-video.fcb140fa.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38ee00b1.js",
+    "static/css/2.06565635.chunk.css",
+    "static/js/2.9a908ddb.chunk.js",
+    "static/css/main.c5d12e20.chunk.css",
+    "static/js/main.8f41555c.chunk.js"
+  ]
+}
