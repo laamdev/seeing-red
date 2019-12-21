@@ -6,11 +6,9 @@ import { Link } from "react-router-dom";
 
 import DrawerToggle from "../../Drawer/DrawerToggle";
 
-import "./Header.scss";
-
 function Header({ toggleHandler }) {
-  const [shouldHideHeader, setShouldHideHeader] = useState(false);
-  const [shouldShowShadow, setShouldShowShadow] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+  const [showShadow, setShowShadow] = useState(false);
 
   const MINIMUM_SCROLL = 80;
   const TIMEOUT_DELAY = 400;
@@ -26,18 +24,18 @@ function Header({ toggleHandler }) {
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
 
     //We then use these values to pass booleans to our useState functions.
-    //Finally, our classNames now get set to the correct values when the setShouldShowShadow and setShouldHideHeader hooks are called!
+    //Finally, our classNames now get set to the correct values when the setShowShadow and setHideHeader hooks are called!
 
-    setShouldShowShadow(currentScrollTop > 2);
+    setShowShadow(currentScrollTop > 2);
 
-    //we place the setShouldHideHeader function inside of a setTimeout to add a bit of delay effect to the header’s hide/show movement after scrolling
+    //we place the setHideHeader function inside of a setTimeout to add a bit of delay effect to the header’s hide/show movement after scrolling
     setTimeout(() => {
-      setShouldHideHeader(isScrolledDown && isMinimumScrolled);
+      setHideHeader(isScrolledDown && isMinimumScrolled);
     }, TIMEOUT_DELAY);
   });
 
-  const shadowStyle = shouldShowShadow ? "shadow" : "";
-  const hiddenStyle = shouldHideHeader ? "hidden" : "";
+  const shadowStyle = showShadow ? "shadow" : "";
+  const hiddenStyle = hideHeader ? "hidden" : "";
 
   return (
     <header className={`header ${hiddenStyle} ${shadowStyle}`}>
@@ -63,12 +61,6 @@ function Header({ toggleHandler }) {
                 Weather
               </Link>
             </li>
-
-            {/* <li>
-              <NavLink className="header__links__link" to="/contact">
-                Contact
-              </NavLink>
-            </li> */}
           </ul>
         </div>
 

@@ -1,12 +1,17 @@
+// STYLES
+import "./index.scss";
+
+// REACT
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+//  COMPONENTS
+import App from "./app/App";
 import Home from "./views/Home/Home";
 import Weather from "./views/Weather/Weather";
+
+import * as serviceWorker from "./serviceWorker";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles

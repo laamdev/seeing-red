@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getItem = url => {
+export const getApiCall = url => {
   return new Promise((resolve, reject) => {
     axios
       .get(url)

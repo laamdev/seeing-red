@@ -2,7 +2,7 @@ import React from "react";
 import "./Drawer.scss";
 import { Link } from "react-router-dom";
 
-const drawer = ({ drawerIsOpen }) => {
+const Drawer = ({ drawerIsOpen, toggleHandler }) => {
   let drawerClasses = "drawer";
 
   if (drawerIsOpen) {
@@ -11,23 +11,18 @@ const drawer = ({ drawerIsOpen }) => {
 
   return (
     <nav className={drawerClasses}>
+      <button onClick={toggleHandler} className="drawer__button">
+        X
+      </button>
       <ul>
         <li>
-          <Link to="/weather" classNmae="drawer__link">
+          <Link to="/weather" className="drawer__link" onClick={toggleHandler}>
             Weather
           </Link>
         </li>
-
-        {/* <li>
-          <a href="/">Destinations</a>
-        </li>
-
-        <li>
-          <a href="/">Contact</a>
-        </li> */}
       </ul>
     </nav>
   );
 };
 
-export default drawer;
+export default Drawer;

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Backdrop.scss";
 
-const Backdrop = ({ backdropClickHandler }) => (
-  <div className="backdrop" onClick={backdropClickHandler}></div>
+const Backdrop = ({ toggleHandler }) => (
+  <div className="backdrop" onClick={toggleHandler}></div>
 );
 
 export default Backdrop;

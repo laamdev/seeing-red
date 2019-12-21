@@ -1,21 +1,31 @@
 .weather {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   text-align: center;
   text-transform: uppercase;
   justify-content: space-evenly;
 
-  h1 {
-    font-size: 5rem;
+  &__day {
+    font-size: 6rem;
   }
 
-  h2 {
-    font-size: 3.5rem;
+  &__season {
+    &__text {
+      font-size: 3rem;
+    }
+    &__icon {
+      width: 5rem;
+    }
   }
 
-  h3 {
-    font-size: 2rem;
+  &__temp {
+    &__icon {
+      width: 5rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
   }
 
   &__temp {
@@ -28,7 +38,14 @@
   &__temp-icon {
     width: 25%;
   }
+}
 
-  &__temp-min-max {
+@media screen and (min-width: 769px) {
+  .weather {
+    flex-direction: row;
+
+    &__season__icon {
+      width: 8rem;
+    }
   }
 }
