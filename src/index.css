@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  /* Ensure that the height of the element includes the  box border, not just the content */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Varela", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+button {
+  font-weight: 600;
+  font-family: "Varela", sans-serif;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100%;
+}
+
+.vertical-spacer {
+  height: 100px;
+  margin: 20px 0 -50px 0;
+  background: transparent;
+  /* you'll need this if #container's parent element has a different background from #container itself */
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,66 @@
+.weather {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.weather__day {
+  font-size: 6rem;
+}
+
+.weather__season__text {
+  font-size: 3rem;
+}
+
+.weather__season__icon {
+  width: 5rem;
+}
+
+.weather__temp__icon {
+  width: 5rem;
+}
+
+.weather__temp__text {
+  font-size: 2rem;
+}
+
+.weather__temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.weather__temp-icon {
+  width: 25%;
+}
+
+@media screen and (min-width: 769px) {
+  .weather {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .weather__season__icon {
+    width: 8rem;
+  }
+}
+/*# sourceMappingURL=Weather.css.map */

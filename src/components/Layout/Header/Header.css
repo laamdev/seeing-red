@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: black;
+  z-index: 500;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Vertical align*/
+  padding: 0 1rem;
+}
+
+.header__logo {
+  margin-left: 1rem;
+}
+
+.header__logo__letters {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Permanent Marker", cursive, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.header__logo__icon {
+  width: 1.5rem;
+}
+
+.header__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__links li {
+  padding: 0 0.5rem;
+}
+
+.header__links__link {
+  font-size: 1rem;
+  color: #f2f2f2;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header__links__link.active, .header__links__link:hover {
+  color: #0d0d0d;
+  background: #f2f2f2;
+}
+
+.header .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* Takes all the available space between the space that is occupied by the two logo and the navigation items*/
+}
+
+.header.shadow {
+  -webkit-box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+}
+
+.header__links {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .header__toggle-button {
+    display: none;
+  }
+  .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

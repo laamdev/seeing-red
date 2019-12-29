@@ -1,5 +1,5 @@
 @import "./app/variables.scss";
-@import "./components/Layout/Header/Header.scss";
+@import "./app/mixins.scss";
 
 *,
 *::after,
@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%; //equivalent to 10px
-  font-family: $text-font;
+  font-family: $txt-font-family;
 }
 
 body {

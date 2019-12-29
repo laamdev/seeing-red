@@ -1,0 +1,11 @@
+@mixin toggle {
+  border: none;
+  background: none;
+  float: right;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@mixin link {
+  font-size: 2rem;
+}

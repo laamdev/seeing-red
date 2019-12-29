@@ -1,3 +1,5 @@
+import "./Header.scss";
+
 import React, { useState } from "react";
 
 import useDocumentScrollThrottled from "../../../hooks/useDocumentScrollThrottled";
@@ -59,6 +61,9 @@ function Header({ toggleHandler }) {
             <li>
               <Link to="/weather" className="header__links__link">
                 Weather
+              </Link>
+              <Link to="/rovers" className="header__links__link">
+                Rovers
               </Link>
             </li>
           </ul>

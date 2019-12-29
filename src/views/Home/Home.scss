@@ -1,3 +1,6 @@
+@import "../../app/variables.scss";
+@import "../../app/mixins.scss";
+
 //MOBILE FIRST (small devices up to 768px)
 
 .hero {
@@ -8,7 +11,7 @@
   align-items: center;
 
   /* Text styles */
-  color: #f2f2f2;
+  color: $color-light;
 
   /* Background styles */
   // background-color: #262626;
@@ -29,7 +32,7 @@
 
     video {
       width: 100%;
-      height: 100%;
+      height: 80%;
       position: relative;
       top: 50%;
       transform: translateY(-50%);

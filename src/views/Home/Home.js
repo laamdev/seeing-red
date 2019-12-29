@@ -11,6 +11,7 @@ const Home = () => {
             <img
               src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd"
               title="Your browser does not support the &lt;video&gt; tag"
+              alt="video of Mars rotating"
             />
             Video not supported
           </video>

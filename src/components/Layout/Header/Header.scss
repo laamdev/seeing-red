@@ -1,10 +1,13 @@
+@import "../../../app/variables.scss";
+@import "../../../app/mixins.scss";
+
 .header {
   position: fixed;
   right: 0;
   top: 0;
   left: 0;
   width: 100%;
-  height: $headerHeight;
+  height: $header-height;
   transition: 0.5s;
   background-color: black;
   z-index: 500;
@@ -21,14 +24,15 @@
 
     &__letters {
       text-decoration: none;
-      color: $text-color;
-      font-family: $titles-font;
-      font-size: 1.5rem;
+      color: $color-light;
+      font-family: $title-font-family;
+      font-size: 2rem;
       letter-spacing: 3px;
+      cursor: pointer;
     }
 
     &__icon {
-      width: 1.5rem;
+      width: 2rem;
     }
   }
 
@@ -46,7 +50,7 @@
 
     &__link {
       font-size: $button-font-size;
-      color: $text-color;
+      color: $color-light;
       padding: 0 20px;
       text-transform: uppercase;
       text-decoration: none;
@@ -54,8 +58,7 @@
 
       &.active,
       &:hover {
-        color: $text-color-inverse;
-        background: $background-inverse;
+        color: $color-color;
       }
     }
   }

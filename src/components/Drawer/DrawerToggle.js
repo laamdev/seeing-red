@@ -2,7 +2,7 @@ import React from "react";
 
 import "./DrawerToggle.scss";
 
-const drawerToggle = ({ toggleHandler }) => {
+const DrawerToggle = ({ toggleHandler }) => {
   return (
     <button className="toggle-button" onClick={toggleHandler}>
       <span className="toggle-button__line"></span>
@@ -12,4 +12,4 @@ const drawerToggle = ({ toggleHandler }) => {
   );
 };
 
-export default drawerToggle;
+export default DrawerToggle;
