@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Header from "../components/Layout/Header/Header";
-import Footer from "../components/Layout/Footer/Footer";
+// import Footer from "../components/Layout/Footer/Footer";
 
 import Drawer from "../components/Drawer/Drawer";
 import Backdrop from "../components/Backdrop/Backdrop";
@@ -42,7 +42,7 @@ const App = ({ children }) => {
 
       {children}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
