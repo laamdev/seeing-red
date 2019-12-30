@@ -4,7 +4,7 @@ import { throttle } from "lodash";
 function useDocumentScrollThrottled(callback) {
   // the first useState argument is blank.
   // we won’t actually be using that value because we will be grabbing the scrollTop directly.
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [, setScrollPosition] = useState(0);
   let previousScrollTop = 0;
 
   function handleDocumentScroll() {
@@ -42,7 +42,7 @@ function useDocumentScrollThrottled(callback) {
     // it is also possible to call it conditionally by passing the array some parameters
     return () =>
       window.removeEventListener("scroll", handleDocumentScrollThrottled);
-  }, []);
+  }, [handleDocumentScrollThrottled]);
 }
 
 export default useDocumentScrollThrottled;
