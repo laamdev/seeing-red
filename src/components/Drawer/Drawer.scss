@@ -38,7 +38,7 @@
 
     &:hover {
       cursor: pointer;
-      color: $color-color;
+      color: $color-red;
     }
   }
 }
@@ -47,7 +47,7 @@
   transform: translateX(0);
 }
 
-@media (min-width: 769px) {
+@media (min-width: $display-tablet) {
   .drawer {
     display: none;
   }

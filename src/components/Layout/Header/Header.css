@@ -17,8 +17,8 @@
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   /*Vertical align*/
   padding: 0 1rem;
 }
@@ -63,33 +63,34 @@
   transition: 0.5s;
 }
 
-.header__links__link.active, .header__links__link:hover {
+.header__links__link.active,
+.header__links__link:hover {
   color: #0d0d0d;
   background: #f2f2f2;
 }
 
 .header .spacer {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   /* Takes all the available space between the space that is occupied by the two logo and the navigation items*/
 }
 
 .header.shadow {
   -webkit-box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
-          box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
 }
 
 .header.hidden {
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
 }
 
 .header__links {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $display-tablet) {
   .header__toggle-button {
     display: none;
   }

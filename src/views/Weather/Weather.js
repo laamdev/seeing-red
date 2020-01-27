@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { getApiCall } from "../../methods/generalMethods";
 import "./Weather.scss";
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
 const Weather = () => {
   const [weather, setWeather] = useState([]);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState("");
 
+  const [percentage, setPercentage] = useState(0);
+
   useEffect(() => {
-    getApiCall(
-      "https://api.nasa.gov/insight_weather/?api_key=FTxOBfLQCG314D5aXesXFxGafjtCdj3SWlJYCgJ4&feedtype=json&ver=1.0"
-    )
+    getApiCall("https://api.nasa.gov/insight_weather/?api_key=FTxOBfLQCG314D5aXesXFxGafjtCdj3SWlJYCgJ4&feedtype=json&ver=1.0")
       .then(res => {
         setWeather(res);
         setLoad(true);
@@ -46,13 +47,7 @@ const Weather = () => {
         />
       );
     } else if (season === "fall") {
-      season_icon = (
-        <img
-          src="https://console.firebase.google.com/u/0/project/seeing-red/storage/seeing-red.appspot.com/files"
-          alt="fall season icon"
-          className="weather__season__icon"
-        />
-      );
+      season_icon = <img src="https://console.firebase.google.com/u/0/project/seeing-red/storage/seeing-red.appspot.com/files" alt="fall season icon" className="weather__season__icon" />;
     } else if (season === "winter") {
       season_icon = (
         <img
@@ -71,12 +66,11 @@ const Weather = () => {
         ) : (
           <>
             <h1 className="weather__day">sol {today}</h1>
-
+            <ProgressBar percentage={percentage} />
             <div className="weather__season">
               {season_icon}
               <h2 className="weather__season__text">{season}</h2>
             </div>
-
             <div className="weather__temp">
               <div className="weather__temp__max">
                 <img
@@ -84,9 +78,7 @@ const Weather = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/max-temp.svg?alt=media&token=587ae349-b4e3-438e-b16e-b1657ac2021c"
                   alt="maximum temperature icon"
                 />
-                <h3 className="weather__temp__text">
-                  {weather[today].AT.mx.toFixed(1)}°C
-                </h3>
+                <h3 className="weather__temp__text">{weather[today].AT.mx.toFixed(1)}°C</h3>
               </div>
 
               <div className="weather__temp__min">
@@ -95,9 +87,7 @@ const Weather = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/min-temp.svg?alt=media&token=9c136708-306f-4a68-9948-83406aa1ea25"
                   alt="minimum temperature icon"
                 />
-                <h3 className="weather__temp__text">
-                  {weather[today].AT.mn.toFixed(1)}°C
-                </h3>
+                <h3 className="weather__temp__text">{weather[today].AT.mn.toFixed(1)}°C</h3>
               </div>
             </div>
           </>

@@ -1,0 +1,59 @@
+import React from "react";
+import "./Drawer.scss";
+import { Link } from "react-router-dom";
+
+const Drawer = ({ drawerIsOpen, toggleHandler }) => {
+  let drawerClasses = "drawer";
+
+  if (drawerIsOpen) {
+    drawerClasses = "drawer show";
+  }
+
+  return (
+    <nav className={drawerClasses}>
+      <button onClick={toggleHandler} className="drawer__button">
+        X
+      </button>
+      <ul>
+        <li>
+          <Link
+            to={{
+              pathname: "/weather",
+              state: {
+                from: "root"
+              }
+            }}
+            className="drawer__link"
+            onClick={toggleHandler}
+          >
+            Weather
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Drawer;
+
+
+///////////////////
+
+            <div>Location = {location.pathname}</div>
+            <div>From = {location.state.from}</div>
+            <button onClick={goBackHandle}>Go back</button>
+
+
+/////////
+  const location = useLocation();
+  const history = useHistory();
+
+  console.log(location);
+  console.log(`history${history}`);
+
+  function goBackHandle() {
+    history.goBack();
+  }
+
+  useEffect(() => {
+import { useLocation, useHistory } from "react-router";

@@ -58,7 +58,7 @@
 
       &.active,
       &:hover {
-        color: $color-color;
+        color: $color-red;
       }
     }
   }
@@ -80,7 +80,7 @@
 }
 
 // devices from 769px and larger
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $display-tablet) {
   .header__toggle-button {
     display: none;
   }
