@@ -16,7 +16,7 @@ body {
   width: 100vw;
   line-height: 1.5;
   font-size: 62.5%; //equivalent to 10px
-  font-family: $txt-font-family;
+  font-family: $txt-font;
 }
 
 body {
@@ -36,12 +36,6 @@ button {
 .page-container {
   position: relative;
   min-height: 100%;
-}
-
-.vertical-spacer {
-  height: 100px;
-  margin: 20px 0 -50px 0;
-  background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
 }
 
 //! COLORS

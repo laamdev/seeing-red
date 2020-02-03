@@ -3,7 +3,7 @@
 *::before {
   /* Ensure that the height of the element includes the  box border, not just the content */
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -36,10 +36,4 @@ button {
   min-height: 100%;
 }
 
-.vertical-spacer {
-  height: 100px;
-  margin: 20px 0 -50px 0;
-  background: transparent;
-  /* you'll need this if #container's parent element has a different background from #container itself */
-}
 /*# sourceMappingURL=index.css.map */

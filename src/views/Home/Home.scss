@@ -4,22 +4,12 @@
 //MOBILE FIRST (small devices up to 768px)
 
 .hero {
-  /* Flexbox stuff */
   display: flex;
   height: 100vh;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
-
-  /* Text styles */
+  text-align: center;
   color: $color-light;
-
-  /* Background styles */
-  // background-color: #262626;
-  // background-image: url("https://firebasestorage.googleapis.com/v0/b/seeing-red.appspot.com/o/hero-bg.jpg?alt=media&token=897bc3fd-3841-4ccd-8f6a-397d530e23dd");
-  // background-size: cover;
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
 
   &__video-wrap {
     position: absolute;
@@ -32,7 +22,7 @@
 
     video {
       width: 100%;
-      height: 80%;
+      height: 90%;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -46,39 +36,46 @@
     top: 0;
     left: 0;
     background: #010001;
-    opacity: 0.45;
+    opacity: 0.25;
+
     z-index: 1;
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
     z-index: 2;
+  }
 
-    h1 {
-      /* Text styles */
-      font-size: 6rem;
-      font-family: "Permanent Marker", cursive;
-      padding: 0 10px;
-      /* Margins */
-      margin: 0;
-    }
+  &__title {
+    font-size: 6rem;
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 1rem;
+    color: $color-red;
+    text-shadow: -0.1rem 0 $color-light, 0 0.1rem $color-light, 0.1rem 0 $color-light, 0 -0.1rem $color-light;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: $txt-font;
+    color: $color-light;
   }
 }
 
-.container {
-  max-width: 960px;
-  padding: 0 1rem;
-  margin: auto;
-  text-align: center;
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-
-  height: 100%;
-  padding: 7rem 0;
-
-  justify-content: space-evenly;
+  padding: 4rem 2rem;
+  height: 100vh;
   align-items: center;
   background-color: #f2f2f2;
 
@@ -95,112 +92,47 @@
   }
 
   &__content {
-    width: 90%;
     font-size: 1.5rem;
     line-height: 1.5em;
+    height: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   &__btn {
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    padding: 0 16px;
-    min-width: 64px;
-    height: 36px;
-    vertical-align: middle;
-    text-align: center;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    background-color: #af381b;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    font-family: "Varela", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    overflow: hidden;
-    outline: none;
+    width: fit-content;
+    padding: 0.5rem 2rem;
     cursor: pointer;
-    transition: box-shadow 0.2s;
+    transition: all 150ms linear;
+    text-align: center;
+    background: $color-red;
+    font-family: $btn-font;
+    color: $color-light;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: $btn-size;
 
-    &::-moz-focus-inner {
-      border: none;
-    }
-
-    /* Overlay */
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgb(255, 255, 255);
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-
-    /* Ripple */
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      border-radius: 50%;
-      padding: 50%;
-      width: 32px; /* Safari */
-      height: 32px; /* Safari */
-      background-color: rgb(255, 255, 255);
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(1);
-      transition: opacity 1s, transform 0.5s;
-    }
-
-    /* Hover, Focus */
-    &:hover,
-    &:focus {
-      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-    }
-
-    &:hover::before {
-      opacity: 0.08;
-    }
-
-    &:focus::before {
-      opacity: 0.24;
-    }
-
-    &:hover:focus::before {
-      opacity: 0.3;
+    &:hover {
+      transition: all 150ms linear;
+      opacity: 0.85;
+      color: $color-red;
+      background-color: $color-light;
+      opacity: 1;
     }
 
     &:active {
-      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      transition: all 150ms linear;
+      opacity: 0.75;
+      background-color: $color-light;
+      opacity: 1;
     }
 
-    &:active::after {
-      opacity: 0.32;
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 0s;
-    }
-
-    /* Disabled */
-    &:disabled {
-      color: rgba(0, 0, 0, 0.38);
-      background-color: rgba(0, 0, 0, 0.12);
-      box-shadow: none;
-      cursor: initial;
-    }
-
-    &:disabled::before {
-      opacity: 0;
-    }
-
-    &:disabled::after {
-      opacity: 0;
+    &:focus {
+      outline: 1px dotted $color-red;
+      outline-offset: -4px;
     }
   }
 }
@@ -215,28 +147,53 @@
 @media screen and (min-width: $display-tablet) {
   .hero {
     &__content {
-      h1 {
-        font-size: 10rem;
+      &__title {
+        font-size: 15rem;
       }
     }
   }
 
-  .container {
-    background-color: #010001;
+  .service {
+    &__title {
+      font-size: 6rem;
+    }
+    &__content {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: $display-desktop) {
+  .hero {
+    &__title {
+      font-size: 12rem;
+    }
+    &__subtitle {
+      font-size: 3rem;
+      letter-spacing: 2rem;
+    }
+  }
+
+  .services {
+    justify-content: space-evenly;
   }
 
   .service {
     flex-direction: row;
-    flex: initial;
-    justify-content: space-evenly;
-    padding-top: 50px;
+    justify-content: space-around;
 
     &__image {
-      width: 33%;
+      width: 40%;
     }
-
+    &__title {
+      font-size: 4rem;
+    }
     &__content {
       width: 33%;
+      font-size: 2rem;
+    }
+    &__btn {
+      font-size: 2rem;
     }
   }
 }

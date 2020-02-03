@@ -1,4 +1,7 @@
 @mixin toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
   border: none;
   background: none;
   float: right;

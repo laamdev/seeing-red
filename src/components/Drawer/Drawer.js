@@ -14,16 +14,12 @@ const Drawer = ({ drawerIsOpen, toggleHandler }) => {
       <button onClick={toggleHandler} className="drawer__toggle">
         X
       </button>
-      <ul>
-        <li>
-          <Link to="/weather" className="drawer__link" onClick={toggleHandler}>
-            Weather
-          </Link>
-          <Link to="/rovers" className="drawer__link" onClick={toggleHandler}>
-            Rovers
-          </Link>
-        </li>
-      </ul>
+      <Link to="/weather" className="drawer__link" onClick={toggleHandler}>
+        Weather
+      </Link>
+      <Link to="/rovers" className="drawer__link" onClick={toggleHandler}>
+        Rovers
+      </Link>
     </nav>
   );
 };

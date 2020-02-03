@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.scss";
-import heroVideo from "./hero-video.mp4";
+import heroVideo from "../../assets/hero-video.mp4";
+
+//STYLES
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
         <div className="hero__overlay" />
         <div className="hero__content">
           <h1 className="hero__title">We are the Martians</h1>
+          <h2 className="hero__subtitle">Join the startup planet</h2>
         </div>
       </header>
 
@@ -33,28 +36,17 @@ const Home = () => {
           />
 
           <div className="service__content" data-aos="fade-in">
-            <h2 className="service__title">
-              Fly with our state-of-the-art rocket fleet
-            </h2>
-            <p>
-              We have partenered with Space X to give you the quickest and
-              safest alternative in outer space travel.
-            </p>
-            <button className="service__btn">Learn more</button>
+            <h2 className="service__title">Fly with our state-of-the-art rocket fleet</h2>
+            <p>We have partenered with Space X to give you the quickest and safest alternative in outer space travel.</p>
+            <button className="service__btn">Fly!</button>
           </div>
         </section>
 
         <section className="service middle">
           <div className="service__content" data-aos="fade-in">
-            <h2 className="service__title">
-              Explore the Red Planet any way you want
-            </h2>
-            <p>
-              We offer a series of tour packages that will allow you to travel
-              around Mars and its wonders in the fashion that's best adjusted to
-              your needs and preferences.
-            </p>
-            <button className="service__btn">Learn more</button>
+            <h2 className="service__title">Explore the Red Planet any way you want</h2>
+            <p>We offer a series of tour packages that will allow you to travel around Mars and its wonders in the fashion that's best adjusted to your needs and preferences.</p>
+            <button className="service__btn">Explore!</button>
           </div>
 
           <img
@@ -75,12 +67,8 @@ const Home = () => {
 
           <div className="service__content" data-aos="fade-in">
             <h2 className="service__title">Feel at home like the Jetsons!</h2>
-            <p>
-              We offer a wide range of luxurious villa-pods, fully equiped with
-              high-speed interplanetary internet, insta-food preparation units,
-              and an optional robo-maid.
-            </p>
-            <button className="service__btn">Learn more</button>
+            <p>We offer a wide range of luxurious villa-pods, fully equiped with high-speed interplanetary internet, insta-food preparation units, and an optional robo-maid.</p>
+            <button className="service__btn">Live!</button>
           </div>
         </section>
       </div>
